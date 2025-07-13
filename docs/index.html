@@ -290,9 +290,9 @@
 
     <nav class="desktop-nav" role="navigation" aria-label="Главное меню">
         <a href="/" tabindex="0">Главная</a>
-      <a href="#features" tabindex="0">Функции</a>
-      <a href="#commands" tabindex="0">Команды</a>
-      <a href="#install" tabindex="0">Установка</a>
+      <a href="/#features" tabindex="0">Функции</a>
+      <a href="/#commands" tabindex="0">Команды</a>
+      <a href="/#install" tabindex="0">Установка</a>
       <a href="https://t.me/VelionManager" tabindex="0">Поддержка</a>
       <a href="https://t.me/veliongamesbot" target="_blank" rel="noopener" class="btn-gradient" tabindex="0">Присоединиться</a>
     </nav>
@@ -313,32 +313,29 @@
 <main class="container mx-auto px-6 py-12 flex-grow max-w-5xl">
 
   <h1 class="text-4xl font-extrabold mb-6 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent select-none">Документация по VelionBot</h1>
-  <p class="mb-8 text-gray-400">Добро пожаловать в полную документацию VelionBot — вашего помощника в Telegram с мини-играми, Twitch/Steam интеграцией и удобным управлением сообществом.</p>
+  <p class="mb-8 text-gray-400">Добро пожаловать в полную документацию VelionBot — вашего помощника в Discord с мини-играми,Steam интеграцией и удобным управлением сообществом.</p>
 
   <!-- Основные команды -->
   <section id="commands" class="bg-gray-800 rounded-xl shadow-lg p-8 mb-16 select-none">
     <h2 class="text-3xl font-extrabold mb-8 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">Основные команды VelionBot</h2>
     <ul class="list-none space-y-6 text-gray-300 text-lg leading-relaxed">
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/start</code> — запуск бота с приветственным сообщением и базовым руководством.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">!help</code> — список всех команд существующих в боте.
       </li>
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/help</code> — список всех команд существующих в боте.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">!profile</code> — показать профиль VelionBot пользователя.
       </li>
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/tgprofile</code> — показать профиль Telegram пользователя: аватар, ник, ID и статус.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">!bind_steam</code> — Привязать интеграцию стим.
       </li>
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/steamprofile</code> — получить публичную информацию Steam профиля, включая аватар и статистику игр.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/steam</code> — получить публичную информацию Steam профиля, включая аватар и статистику игр.
       </li>
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/integrations</code> — подключить одну из предложеных интеграций к вашему Telegram-Аккаунту.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">!games</code> — список мини-игр доступных в текущий момент.
       </li>
       <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/games</code> — список мини-игр доступных в текущий момент.
-      </li>
-      <li>
-        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">/unlink_twitch/steam</code> — отвязать ранее привязанную к аккаунту интеграцию.
+        <code class="bg-gray-700 px-3 py-1 rounded font-mono text-lime-400 font-bold">!Timely</code> - Ежедневная награда
       </li>
     </ul>
   </section>
@@ -349,44 +346,39 @@
     <div class="space-y-8 text-gray-300 text-lg leading-relaxed">
 
       <article class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 cursor-default select-none">
-        <h3 class="text-2xl font-bold mb-3 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">🎮 Интеграция с Twitch и Steam</h3>
-        <p>Получайте актуальную информацию о стримах, количестве подписчиков, статусе трансляций и игровой статистике. Все данные собираются автоматически, чтобы вы могли легко следить за любимыми стримерами и игроками.</p>
+        <h3 class="text-2xl font-bold mb-3 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">🎮 Интеграция Steam</h3>
+        <p>Получайте актуальную информацию о вашем стим аккаунте.</p>
       </article>
 
       <article class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 cursor-default select-none">
         <h3 class="text-2xl font-bold mb-3 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">🎲 Мини-игры и развлечения</h3>
-        <p>Встроенные игры и конкурсы помогут оживить общение в вашем чате. Устраивайте дуэли, викторины, карму-систему и многое другое прямо в Telegram.</p>
+        <p>Встроенные игры и конкурсы помогут оживить общение в вашем чате.</p>
       </article>
 
       <article class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 cursor-default select-none">
         <h3 class="text-2xl font-bold mb-3 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">🛡️ Модерация и управление сообществом</h3>
-        <p>Инструменты для администраторов: предупреждения, баны, управление ролями и автоматизация простых задач. Все это помогает поддерживать порядок и комфорт в группе.</p>
+        <p>Инструменты для администраторов: муты, баны, автоматизация простых задач. Все это помогает поддерживать порядок и комфорт в группе.</p>
       </article>
 
-      <article class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 cursor-default select-none">
-        <h3 class="text-2xl font-bold mb-3 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent">🔧 Настройка под себя</h3>
-        <p>Изменяйте префикс команд, язык интерфейса (русский и английский поддерживаются), настройки оповещений и многое другое с помощью удобной панели управления или команд.</p>
-      </article>
 
     </div>
   </section>
   <section id="install" class="mb-16">
     <h2 class="text-3xl font-extrabold mb-6 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent select-none">Как запустить и настроить VelionBot в <a href="https://t.me/VelionGamesBot">Телеграм</a></h2>
     <p class="mb-4 text-gray-400">
-      Для установки VelionBot в <a href="https://t.me/VelionGamesBot" class="color: #a8ff60;">Телеграмм</a> выполните следующие шаги:
+      Для установки VelionBot в <a href="/start" class="color: #a8ff60;">Дискорд</a> выполните следующие шаги:
     </p>
     <ol class="list-decimal list-inside text-gray-300 text-lg leading-relaxed mb-6">
-      <li>Запустите бота нажав кнопку Start в Телеграмм<code class="bg-gray-700 px-2 rounded font-mono text-lime-400"><a href="https://t.me/VelionGamesBot">@VelionGamesBot</a></code></li>
+      <li>Добавьте бота на сервер<code class="bg-gray-700 px-2 rounded font-mono text-lime-400"><a href="/start">ДОБАВИТЬ</a></code></li>
       <li>Используйте первую команду:
         <pre class="bg-gray-800 rounded-xl p-4 overflow-x-auto text-lime-400 font-mono text-lg select-text mb-4">/help</pre>
       </li>
-      <li>Привяжите нужные интеграции командой <code class="bg-gray-700 px-2 rounded font-mono text-lime-400">/integrations</code></li>
+      <li>Привяжите нужные интеграции командой <code class="bg-gray-700 px-2 rounded font-mono text-lime-400">/bind_steam</code></li>
       <li>Просмотрите свой интегрированый профиль:
-        <pre class="bg-gray-800 rounded-xl p-4 overflow-x-auto text-lime-400 font-mono text-lg select-text mb-4">/steam | /twitch</pre>
+        <pre class="bg-gray-800 rounded-xl p-4 overflow-x-auto text-lime-400 font-mono text-lg select-text mb-4">/steam</pre>
       </li>
-      <li>Наслаждайтесь <code class="bg-gray-700 px-2 rounded font-mono text-lime-400"><a href="https://t.me/VelionGamesBot">VelionBot</a></code> и развлекайтесь прямо в Телеграм.</li>
+      <li>Наслаждайтесь <code class="bg-gray-700 px-2 rounded font-mono text-lime-400"><a href="/start">VelionBot</a></code> и развлекайтесь прямо в Дискорд.</li>
     </ol>
-    <p class="text-gray-400 italic">* Рекомендуется добавить в группу для корректного отображения аватарок / баннеров в интеграциях.</p>
   </section>
   <section id="setup" class="mb-16">
     <h2 class="text-3xl font-extrabold mb-6 bg-gradient-to-r from-lime-400 to-lime-600 bg-clip-text text-transparent select-none">Настройка VelionBot</h2>
@@ -394,16 +386,13 @@
 
     <ul class="list-disc list-inside text-gray-300 text-lg leading-relaxed space-y-3">
       <li>
-        <strong>Язык интерфейса:</strong> поддерживаются русский и английский, меняется командой <code class="bg-gray-700 px-2 rounded font-mono text-lime-400">/setlang &lt;ru|en&gt;</code>.
-      </li>
-      <li>
         <strong>Привязка аккаунтов:</strong> Twitch и Steam аккаунты можно связать с вашим Telegram-профилем для удобного доступа к информации.
       </li>
       <li>
-        <strong>Оповещения:</strong> настройка уведомлений о новых обновлениях, патчах и рестартах <code class="bg-gray-700 px-2 rounded font-mono text-lime-400"><a href="https://t.me/VelionGamesBot">VelionBot</a></code>.
+        <strong>Модерация:</strong> управление предупреждениями, банами и настройка автомодерации через команды.
       </li>
       <li>
-        <strong>Модерация:</strong> управление предупреждениями, банами и настройка автомодерации через команды.
+        <strong>Экономика:</strong> Уникальная экономика созданая для удобных игр в казино и переводов.
       </li>
     </ul>
   </section>
@@ -421,46 +410,85 @@
 </main>
 
 
-<footer role="contentinfo" style="
-  background: #1a1a1a;
-  color: #ccc;
-  padding: 3rem 2rem;
-  border-top: 1px solid #333;
-">
-  <div style="
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 4rem;
-  ">
-    <div style="display: flex; align-items: center; gap: 1rem; min-width: 200px; padding-top: 2rem;">
-      <img src="../imgs/velionbot.png" alt="VelionBot" width="42" height="42" style="border-radius: 8px;">
-      <div style="font-size: 1.4rem; font-weight: bold; color: #7fcf6f;">VelionBot</div>
+<footer id="contact" class="bg-[#0e0e0e] text-gray-400 py-12 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-sm">
+    <!-- Логотип и описание -->
+    <div>
+      <h3 class="text-emerald-400 text-xl font-bold mb-3 hover:text-emerald-500 transition-colors">VelionBot</h3>
+      <p class="text-gray-500">Создан с магией ❤️ и кодом.<br>Версия 1.0.0</p>
     </div>
-    <nav style="
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-      text-align: left;
-      min-width: 200px;
-    ">
-      <a href="/privacy" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Политика конфиденциальности</a>
-      <a href="https://t.me/VelionManager" target="_blank" rel="noopener" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Официальный ТГК</a>
-      <a href="https://t.me/velionproject" target="_blank" rel="noopener" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">VelionTeam</a>
-      <a href="/docs" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Документация</a>
-    </nav>
+
+    <!-- Ссылки -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Ссылки</h4>
+      <ul class="space-y-1">
+        <li><a href="/start" class="hover:text-emerald-400 transition-colors">Добавить в Discord</a></li>
+      </ul>
+    </div>
+
+    <!-- Контакты -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Контакты</h4>
+      <ul class="space-y-1">
+        <li><span class="text-gray-400">Telegram: @VelionTeam</span></li>
+        <li><span class="text-gray-400">Менеджер: @VelionManager</span></li>
+        <li><a href="https://t.me/velionmanager" class="hover:text-emerald-400 transition-colors">Тех-Поддержка</a></li>
+      </ul>
+    </div>
+
+    <!-- Соцсети -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Наш бот</h4>
+      <ul class="space-y-1">
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1392912652916887602&permissions=8&scope=bot%20applications.commands" class="hover:text-emerald-400 transition-colors">Discord</a></li>
+        <li><a href="https://t.me/veliongamesbot" class="hover:text-emerald-400 transition-colors">Telegram</a></li>
+      </ul>
+    </div>
+
+    <!-- Компания -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Компания</h4>
+      <ul class="space-y-1">
+        <li><a href="https://t.me/VelionProject" class="hover:text-emerald-400 transition-colors">VelionTeam</a></li>
+        <li><a href="https://t.me/VelionCommunity" class="hover:text-emerald-400 transition-colors">VelionCommunity</a></li>
+        <li><a href="#" class="hover:text-emerald-400 transition-colors">TikTok</a></li>
+      </ul>
+    </div>
+
+    <!-- Правовая информация -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Правовая информация</h4>
+      <ul class="space-y-1">
+        <li><a href="/privacy" class="hover:text-emerald-400 transition-colors">Политика конфиденциальности</a></li>
+        <li><a href="/terms" class="hover:text-emerald-400 transition-colors">Правила использования</a></li>
+      </ul>
+    </div>
+
+    <!-- Сообщество -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Сообщество</h4>
+      <ul class="space-y-1">
+        <li><a href="https://discord.gg/qvBEtfYk" class="hover:text-emerald-400 transition-colors">Discord-сервер</a></li>
+        <li><a href="/partners" class="hover:text-emerald-400 transition-colors">Партнёрство</a></li>
+        <li><a href="https://t.me/VelionProject" class="hover:text-emerald-400 transition-colors">Новости проекта</a></li>
+      </ul>
+    </div>
+
+    <!-- Навигация -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Навигация</h4>
+      <ul class="space-y-1">
+        <li><a href="/" class="hover:text-emerald-400 transition-colors">Главная</a></li>
+        <li><a href="/#features" class="hover:text-emerald-400 transition-colors">Особенности</a></li>
+        <li><a href="/docs" class="hover:text-emerald-400 transition-colors">Документация</a></li>
+      </ul>
+    </div>
   </div>
-  <div style="margin-top: 2rem; text-align: center; font-size: 0.85rem; color: #777;">
-    <p>Создано с ♥ командой <strong style="color: #7fcf6f;">Velion</strong>. &copy; 2025 VelionBot. Все права защищены.</p>
-  </div>
+
+  <!-- Нижняя строка -->
+  <p class="mt-10 text-center text-gray-500 text-xs sm:text-sm">
+    © 2025 VelionBot. Все права защищены.
+  </p>
 </footer>
 
 <script>

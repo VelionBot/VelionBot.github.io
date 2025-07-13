@@ -2,21 +2,23 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <title>VelionBot — Политика конфиденциальности</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Политика конфиденциальности | VelionBot</title>
   <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
-  <meta name="description" content="VelionBot — мощный Телеграм бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
-  <meta name="keywords" content="Телеграм, бот, VelionBot, развлечения, Twitch, Steam, мини-игры, модерация, Telegram bot" />
+  <meta name="description" content="VelionBot — мощный дискорд бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
+  <meta name="keywords" content="Дискорд, бот, VelionBot, развлечения, Twitch, Steam, мини-игры, модерация, Discord bot" />
   <meta name="author" content="VelionBot Team" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="VelionBot — Telegram бот для интеграций и развлечений" />
-  <meta property="og:description" content="VelionBot — мощный Телеграм бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
-  <meta property="og:url" content="https://VelionBot.github.io" />
+  <meta property="og:title" content="VelionBot — Дискорд бот для управления и развлечений" />
+  <meta property="og:description" content="VelionBot — мощный дискорд бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
+  <meta property="og:url" content="https://www.velion.site/privacy" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="VelionBot — Телеграм бот для интеграций и развлечений" />
-  <meta name="twitter:description" content="VelionBot — мощный Телеграм бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
+  <meta name="twitter:title" content="VelionBot — Дискорд бот для управления и развлечений" />
+  <meta name="twitter:description" content="VelionBot — мощный дискорд бот с мини-играми, интеграциями Twitch и Steam и многим другим." />
+  <meta name="theme-color" content="#10B981" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       margin: 0;
@@ -392,18 +394,18 @@
       <a href="/" tabindex="0">Команды</a>
       <a href="/" tabindex="0">Установка</a>
       <a href="https://t.me/VelionManager" tabindex="0">Поддержка</a>
-      <a href="https://t.me/veliongamesbot" target="_blank" rel="noopener" class="btn-gradient" tabindex="0">Присоединиться</a>
+      <a href="/start" target="_blank" rel="noopener" class="btn-gradient" tabindex="0">Присоединиться</a>
     </nav>
 
     <button aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" class="mobile-menu-button" id="mobile-menu-toggle">&#9776;</button>
   </div>
 
   <nav id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Мобильное меню">
-    <a href="#features" tabindex="-1">Функции</a>
-    <a href="#commands" tabindex="-1">Команды</a>
-    <a href="#install" tabindex="-1">Установка</a>
-    <a href="#support" tabindex="-1">Поддержка</a>
-    <a href="https://t.me/VelionGamesBot" target="_blank" rel="noopener" class="btn-gradient" tabindex="-1" style="margin: 0 1.5rem;">Присоединиться</a>
+    <a href="/" tabindex="-1">Функции</a>
+    <a href="/" tabindex="-1">Команды</a>
+    <a href="/" tabindex="-1">Установка</a>
+    <a href="/" tabindex="-1">Поддержка</a>
+    <a href="/startt" target="_blank" rel="noopener" class="btn-gradient" tabindex="-1" style="margin: 0 1.5rem;">Присоединиться</a>
   </nav>
 </header>
   <div class="container">
@@ -470,46 +472,85 @@
       Telegram: <a href="https://t.me/velionmanager" target="_blank">@VelionManager</a>
     </p>
   </div>
-  <footer role="contentinfo" style="
-  background: #1a1a1a;
-  color: #ccc;
-  padding: 3rem 2rem;
-  border-top: 1px solid #333;
-">
-  <div style="
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 4rem;
-  ">
-    <div style="display: flex; align-items: center; gap: 1rem; min-width: 200px; padding-top: 2rem;">
-      <img src="../imgs/velionbot.png" alt="VelionBot" width="42" height="42" style="border-radius: 8px;">
-      <div style="font-size: 1.4rem; font-weight: bold; color: #7fcf6f;">VelionBot</div>
+  <footer id="contact" class="bg-[#0e0e0e] text-gray-400 py-12 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-sm">
+    <!-- Логотип и описание -->
+    <div>
+      <h3 class="text-emerald-400 text-xl font-bold mb-3 hover:text-emerald-500 transition-colors">VelionBot</h3>
+      <p class="text-gray-500">Создан с магией ❤️ и кодом.<br>Версия 1.0.0</p>
     </div>
-    <nav style="
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-      text-align: left;
-      min-width: 200px;
-    ">
-      <a href="/privacy" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Политика конфиденциальности</a>
-      <a href="https://t.me/VelionManager" target="_blank" rel="noopener" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Официальный ТГК</a>
-      <a href="https://t.me/velionproject" target="_blank" rel="noopener" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">VelionTeam</a>
-      <a href="/docs" style="color: #aaa; text-decoration: none; font-size: 0.95rem; transition: color 0.3s;"
-         onmouseover="this.style.color='#7fcf6f'" onmouseout="this.style.color='#aaa'">Документация</a>
-    </nav>
+
+    <!-- Ссылки -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Ссылки</h4>
+      <ul class="space-y-1">
+        <li><a href="/start" class="hover:text-emerald-400 transition-colors">Добавить в Discord</a></li>
+      </ul>
+    </div>
+
+    <!-- Контакты -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Контакты</h4>
+      <ul class="space-y-1">
+        <li><span class="text-gray-400">Telegram: @VelionTeam</span></li>
+        <li><span class="text-gray-400">Менеджер: @VelionManager</span></li>
+        <li><a href="https://t.me/velionmanager" class="hover:text-emerald-400 transition-colors">Тех-Поддержка</a></li>
+      </ul>
+    </div>
+
+    <!-- Соцсети -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Наш бот</h4>
+      <ul class="space-y-1">
+        <li><a href="https://discord.com/oauth2/authorize?client_id=1392912652916887602&permissions=8&scope=bot%20applications.commands" class="hover:text-emerald-400 transition-colors">Discord</a></li>
+        <li><a href="https://t.me/veliongamesbot" class="hover:text-emerald-400 transition-colors">Telegram</a></li>
+      </ul>
+    </div>
+
+    <!-- Компания -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Компания</h4>
+      <ul class="space-y-1">
+        <li><a href="https://t.me/VelionProject" class="hover:text-emerald-400 transition-colors">VelionTeam</a></li>
+        <li><a href="https://t.me/VelionCommunity" class="hover:text-emerald-400 transition-colors">VelionCommunity</a></li>
+        <li><a href="#" class="hover:text-emerald-400 transition-colors">TikTok</a></li>
+      </ul>
+    </div>
+
+    <!-- Правовая информация -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Правовая информация</h4>
+      <ul class="space-y-1">
+        <li><a href="/privacy" class="hover:text-emerald-400 transition-colors">Политика конфиденциальности</a></li>
+        <li><a href="/terms" class="hover:text-emerald-400 transition-colors">Правила использования</a></li>
+      </ul>
+    </div>
+
+    <!-- Сообщество -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Сообщество</h4>
+      <ul class="space-y-1">
+        <li><a href="https://discord.gg/qvBEtfYk" class="hover:text-emerald-400 transition-colors">Discord-сервер</a></li>
+        <li><a href="/partners" class="hover:text-emerald-400 transition-colors">Партнёрство</a></li>
+        <li><a href="https://t.me/VelionProject" class="hover:text-emerald-400 transition-colors">Новости проекта</a></li>
+      </ul>
+    </div>
+
+    <!-- Навигация -->
+    <div>
+      <h4 class="text-white font-semibold mb-2">Навигация</h4>
+      <ul class="space-y-1">
+        <li><a href="/" class="hover:text-emerald-400 transition-colors">Главная</a></li>
+        <li><a href="/#features" class="hover:text-emerald-400 transition-colors">Особенности</a></li>
+        <li><a href="/docs" class="hover:text-emerald-400 transition-colors">Документация</a></li>
+      </ul>
+    </div>
   </div>
-  <div style="margin-top: 2rem; text-align: center; font-size: 0.85rem; color: #777;">
-    <p>Создано с ♥ командой <strong style="color: #7fcf6f;">Velion</strong>. &copy; 2025 VelionBot. Все права защищены.</p>
-  </div>
+
+  <!-- Нижняя строка -->
+  <p class="mt-10 text-center text-gray-500 text-xs sm:text-sm">
+    © 2025 VelionBot. Все права защищены.
+  </p>
 </footer>
 <script>
   const menuToggle = document.getElementById('mobile-menu-toggle');
